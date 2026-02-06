@@ -7,6 +7,100 @@
     <title>Cook's Companion</title>
 </head>
 <body>
-    <img src="https://stock.adobe.com/search?k=pan+logo" alt="Cook's Companion Logo">
+    <header>
+        <!-- Header -->
+        <div class="header">
+            <img src="./images/logo.jpg" alt="Cook's Companion Logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Planner</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1>Plan. Cook. Enjoy</h1>
+            <div class="dropdown">
+                <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+                <div id="myDropdown" class="dropdown-content">
+                    <button onclick="myFunction()" class="dropbtn"><i class="arrow down"></i></button>
+                    <a href="#">Meal Type</a>
+                    <a href="#">Time</a>
+                    <a href="#">Difficulty</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Featured Today -->
+         <div class="features">
+            <h2>Featured Today</h2>
+            <div class="features-carousel">
+                <div class="bicol-express">
+                    <img src="" alt="Image of bicol bicol express">
+                    <h3>Bicol Express</h3>
+                    <p>30 mins</p>
+                </div>
+                <div class="adobo">
+                    <img src="" alt="Image of adobo">
+                    <h3>Adobo</h3>
+                    <p>20 mins</p>
+                </div>
+                <div class="bulalo">
+                    <img src="" alt="Image of bulalo">
+                    <h3>Bulalo</h3>
+                    <p>1hr/30 mins</p>
+                </div>
+            </div>
+         </div>
+        <!-- Quick Stats -->
+          <div class="stats">
+            <div class="recipes">
+                <p>50+</p>
+                <h4>Recipes</h4>
+            </div>
+            <div class="avg-prep">
+                <p>15m</p>
+                <h4>Average prepared</h4>
+            </div>
+            <div class="meals-planned">
+                <p>24</p>
+                <h4>Meals planned</h4>
+            </div>
+          </div>
+        <!-- CTA BUTTONS -->
+         <div class="btn-cta">
+            <a href="#">Browse Recipes</a>
+            <a href="#">Start Planning</a>
+         </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-logo">
+                <h1>Plan. Cook. Enjoy</h1>
+                <img src="./images/logo.jpg" alt="Cook's Companion Logo">
+            </div>
+            <div class="social">
+                <a href="">facebook</a>
+                <a href="">telegram</a>
+                <a href="">gmail</a>
+                <a href="">instagram</a>
+            </div>
+            <div class="newsletter">
+               <h3>Be one of <span>Us</span>.</h3> 
+               <p>Always will be first to get the new meal and recipes.</p>
+               <div class="sign-up">
+                    <input type="text" placeholder="email address..." required>
+                    <button>Sign Up</button>
+               </div>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>
