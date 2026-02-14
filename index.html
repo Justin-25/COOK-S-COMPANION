@@ -6,115 +6,191 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="logo/jpg" href="/images/favicon.jpg">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Cook's Companion</title>
 </head>
 <body>
-    <header>
-        <!-- Header -->
-        <div class="header">
-            <img src="/images/logo.jpg" alt="Cook's Companion Logo">
-            <h1>Cook's <span class="header-span">Companion</span></h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Recipes</a></li>
-                    <li><a href="meal-planner.html">Planner</a></li>
-                    <li><a href="#">Shop</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!-- Hero Section -->
-        <div class="hero-section">
-            <h2>Plan<span>.</span> Cook<span>.</span> Enjoy<span>.</span></h2>
-            <input class="search" type="text" placeholder="Search...">
-            <div class="dropdown">
-                <img onclick="myFunction()" class="dropbtn" src="/images/down-arrow.png" alt="Drop down arrow">
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Meal Type</a>
-                    <a href="#">Time</a>
-                    <a href="#">Difficulty</a>
+    <!-- Header -->
+   <header>
+        <section>
+                <div class="top-border"></div>
+                <!-- Background Image fo Header -->
+                <div class="header-background-img">
+                    <!-- Header -->
+                    <div class="header">
+                        <img src="images/logo.jpg" alt="Cook's Companion Logo">
+                        <h1>Cook's <span>Companion</span></h1>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Recipes</a></li>
+                                <li><a href="#">Planner</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Favorites</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Hero Section -->
+                    <div class="hero-section">
+                        <h2>PLAN<span>.</span> COOK<span>.</span> ENJOY<span>.</span></h2>
+                        <div class="search">
+                            <input type="text" id="search" placeholder="Search...">
+                            <img src="/svg/dropdown-arrow.svg" alt="Dropdown">                        
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </header>
+        </section>
+   </header>
 
-    <main>
+   <main>
         <!-- Featured Today -->
-         <div class="features">
+        <section>
             <h2>Featured Today</h2>
-            <div class="features-carousel">
-                <div class="bicol-express">
-                    <img src="/images/Bicol-Express.jpg" alt="Image of bicol bicol express">
-                    <h3>Bicol Express</h3>
-                    <p>30 mins</p>
+            <div class="carousel-container">
+                <div class="adobo-container">
+                    <img src="/images/adobo.jpg" alt="Adobo">
+                    <h2>Adobo</h2>
+                    <div class="level">
+                        <img src="/svg/level.svg" alt="Level of Recipees">
+                        <p>Meduim</p>                   
+                    </div>
+                    <div class="list">
+                        <img src="/svg/list.svg" alt="List of Recipees">
+                        <p>8 Recipe</p>                        
+                    </div>
+                    <div class="time">
+                        <img src="/svg/timer.svg" alt="Timer of Recipees">
+                        <p>1 hour</p>                      
+                    </div>
                 </div>
-                <div class="adobo">
-                    <img src="/images/adobo.jpg" alt="Image of adobo">
-                    <h3>Adobo</h3>
-                    <p>20 mins</p>
+                <div class="bulalo-container">
+                    <img src="/images/Bulalo.webp" alt="Bulalo">
+                    <h2>Bulalo</h2>
+                    <div class="level">
+                        <img src="/svg/level.svg" alt="Level of Recipees">
+                        <p>Hard</p>                   
+                    </div>
+                    <div class="list">
+                        <img src="/svg/list.svg" alt="List of Recipees">
+                        <p>9 Recipe</p>                        
+                    </div>
+                    <div class="time">
+                        <img src="/svg/timer.svg" alt="Timer of Recipees">
+                        <p>2 hours</p>                      
+                    </div>
                 </div>
-                <div class="bulalo">
-                    <img src="/images/Bulalo.webp" alt="Image of bulalo">
-                    <h3>Bulalo</h3>
-                    <p>Difficulty</p>
-                    <p>List</p>
-                    <p>Time</p>
+                <div class="bicol-express-container">
+                    <img src="/images/Bicol-Express.jpg" alt="Bicol Express">
+                    <h2>Bicol Express</h2>
+                    <div class="level">
+                        <img src="/svg/level.svg" alt="Level of Recipees">
+                        <p>Meduim</p>                   
+                    </div>
+                    <div class="list">
+                        <img src="/svg/list.svg" alt="List of Recipees">
+                        <p>11 Recipe</p>                        
+                    </div>
+                    <div class="time">
+                        <img src="/svg/timer.svg" alt="Timer of Recipees">
+                        <p>1 hour</p>                      
+                    </div>
                 </div>
             </div>
-         </div>
-        <!-- Quick Stats -->
-          <div class="stats">
-            <div class="">
-                <h3>Delicious Meals in Record Time</h3>
-                <p>15-Minute Meals Available</p>
-            </div>
-            <div class="">
-                <h3>More Taste, Less Wait</h3>
-                <p>100+ "Quick & Easy" Dinners</p>
-            </div>
-            <div class="">
-                <h3>Great Food, No Rush</h3>
-                <p>Under 30 Minutes: 500+ Recipes</p>
-            </div>
-            <div class="">
-                <h3>Your Shortcut to Supper</h3>
-                <p>Save 2 Hours of Meal Planning per week</p>
-            </div>
-          </div>
-        <!-- CTA BUTTONS -->
-         <ul class="btn-cta">
-            <h2>With hundreds of quick and delicious meals at your fingertips, your next great dinner is just a click away.</h2>
-            <a href="#">Browse Recipes</a>
-            <a href="#">Start Planning</a>
-         </ul>
-    </main>
+        </section>
 
-    <footer>
-        <div class="footer">
-            <div class="footer-logo">
-                <h1>Plan. Cook. Enjoy</h1>
-                <img src="/images/logo.jpg" alt="Cook's Companion Logo">
+        <!-- FAQ -->
+         <section>
+            <div class="faq-container">
+                <div class="info">
+                    <h2>What if cooking was always this easy?</h2>
+                    <p>Plan Cook and Enjoy is designed for people who love food but hate the hassle. We don't just give you a list of ingredients; we hold your hand from the grocery store to the plate. Search by cuisine, ingredient, difficulty, or time—if you can dream it, we can help you cook it and enjoy it.</p>
+                </div>
+                <img src="/svg/guide-info.svg" alt="">
             </div>
-            <div class="social">
-                <a href="">facebook</a>
-                <a href="">telegram</a>
-                <a href="">gmail</a>
-                <a href="">instagram</a>
+         </section>
+
+        <!-- Stats -->
+         <section>
+            <div class="stat-container">
+                <div class="meal">
+                    <div class="icon">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <h3>Delicious Meals in Record Time</h3>
+                    </div>
+                    <p>15-Minute Meals Available</p>
+                </div>
+                <div class="taste">
+                    <div class="icon">
+                        <ion-icon name="hourglass-outline"></ion-icon>
+                        <h3>More Taste, Less Wait</h3>
+                    </div>
+                    <p>100+ "Quick & Easy" Dinners</p>
+                </div>
+                <div class="food">
+                    <div class="icon">
+                        <ion-icon name="cafe-outline"></ion-icon>
+                        <h3>Great Food, No Rush</h3>
+                    </div>
+                    <p>Under 30 Minutes: 500+ Recipes</p>
+                </div>
+                <div class="shortcut">
+                    <div class="icon">
+                        <ion-icon name="git-branch-outline"></ion-icon>
+                        <h3>Your Shortcut to Supper</h3>
+                    </div>
+                    <p>Save 2 Hours of Meal Planning per week</p>
+                </div>
             </div>
-            <div class="newsletter">
-               <h3>Be one of <span>Us</span>.</h3> 
-               <p>Always will be first to get the new meal and recipes.</p>
-               <div class="sign-up">
-                    <input type="text" placeholder="email address..." required>
-                    <button>Sign Up</button>
-               </div>
+         </section>
+
+        <!-- CTA -->
+         <section>
+            <div class="cta-container">
+                <div class="cta-info">
+                    <h2>With <span>Hundreds</span> of quick and delicious meals at your fingertips, your next great dinner is just a <span>click</span> away.</h2>
+                    <ul>
+                        <a href="#">Browse Recipes</a>
+                        <a href="#">Start Planning today!</a>
+                    </ul>
+                </div>
+                <img src="/svg/browse-recipes.svg" alt="Cta of Cook Plan Enjoy">
             </div>
-        </div>
-    </footer>
+         </section> 
+   </main>
+
+   <footer>
+        <section>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <img src="/images/logo.jpg" alt="Footer Logo">
+                    <h2>PLAN<span>.</span> COOK<span>.</span> ENJOY<span>.</span></h2>
+                </div>
+                <div class="footer-cta">
+                    <div class="newsletter">
+                        <h2>Be One of Us</h2>
+                        <p>Always will be first to get the new meal and recipes.</p>
+                        <a href="#">Sign Up</a>
+                    </div>
+                    <div class="connect">
+                        <h2>Connect with Us</h2>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Telegram</a></li>
+                                <li><a href="#">Gmail</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+   </footer>
 
 
-<script src="/js/script.js"></script>
+   <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
