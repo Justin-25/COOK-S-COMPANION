@@ -19,9 +19,9 @@
                 <!-- Background Image fo Header -->
                 <div class="header-background-img">
                     <!-- Header -->
-                    <div class="header">
-                        <img src="images/logo.jpg" alt="Cook's Companion Logo">
-                        <h1>Cook's <span>Companion</span></h1>
+                    <div class="container header">
+                        <img class="logo" src="images/logo.jpg" alt="Cook's Companion Logo">
+                        <h1>Cook's <span class="span">Companion</span></h1>
                         <nav>
                             <ul>
                                 <li><a href="#">Recipes</a></li>
@@ -32,11 +32,19 @@
                         </nav>
                     </div>
                     <!-- Hero Section -->
-                    <div class="hero-section">
-                        <h2>PLAN<span>.</span> COOK<span>.</span> ENJOY<span>.</span></h2>
+                    <div class="container hero-section">
+                        <h2>PLAN<span class="span">.</span> COOK<span class="span">.</span> ENJOY<span class="span">.</span></h2>
                         <div class="search">
-                            <input type="text" id="search" placeholder="Search...">
-                            <img src="/svg/dropdown-arrow.svg" alt="Dropdown">                        
+                            <div class="dropdown">
+                                <input class="input-search" type="text" id="search" placeholder="Search...">
+                                <img class="drop-btn" onclick="myFunction()" src="/svg/dropdown-arrow.svg" alt="Dropdown">
+                            </div>                        
+                            <ul id="list-dropdown" class="dropdown-content">
+                                <li href="#meal">Meal</li>
+                                <li href="#dessert">Dessert</li>
+                                <li href="#main dish">Main Dish</li>
+                                <li href="#side dish">Side Dish</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -46,57 +54,66 @@
    <main>
         <!-- Featured Today -->
         <section>
-            <h2>Featured Today</h2>
-            <div class="carousel-container">
-                <div class="adobo-container">
-                    <img src="/images/adobo.jpg" alt="Adobo">
-                    <h2>Adobo</h2>
-                    <div class="level">
-                        <img src="/svg/level.svg" alt="Level of Recipees">
-                        <p>Meduim</p>                   
+            <div class="container featured">
+                <h2>Featured Today</h2>
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <div class="menu">
+                            <img class="menu-img" src="/images/adobo.jpg" alt="Adobo">
+                            <h3>Adobo</h3>
+                            <div class="info level">
+                                <img src="/svg/level.svg" alt="Level of Recipees">
+                                <p>Meduim</p>                   
+                            </div>
+                            <div class="info list">
+                                <img src="/svg/list.svg" alt="List of Recipees">
+                                <p>8 Recipe</p>                        
+                            </div>
+                            <div class="info time">
+                                <img src="/svg/timer.svg" alt="Timer of Recipees">
+                                <p>1 hour</p>                      
+                            </div>                            
+                        </div>
                     </div>
-                    <div class="list">
-                        <img src="/svg/list.svg" alt="List of Recipees">
-                        <p>8 Recipe</p>                        
+                    <div class="carousel-container">
+                        <div class="menu">
+                            <img class="menu-img" src="/images/bulalo.avif" alt="Bulalo">
+                            <h3>Bulalo</h3>
+                            <div class="info level">
+                                <img src="/svg/level.svg" alt="Level of Recipees">
+                                <p>Hard</p>                   
+                            </div>
+                            <div class="info list">
+                                <img src="/svg/list.svg" alt="List of Recipees">
+                                <p>9 Recipe</p>                        
+                            </div>
+                            <div class="info time">
+                                <img src="/svg/timer.svg" alt="Timer of Recipees">
+                                <p>2 hours</p>                      
+                            </div>
+                        </div>
                     </div>
-                    <div class="time">
-                        <img src="/svg/timer.svg" alt="Timer of Recipees">
-                        <p>1 hour</p>                      
+                    <div class="carousel-container">
+                        <div class="menu">
+                            <img class="menu-img" src="/images/Bicol-Express.jpg" alt="Bicol Express">
+                            <h3>Bicol Express</h3>
+                            <div class="info level">
+                                <img src="/svg/level.svg" alt="Level of Recipees">
+                                <p>Meduim</p>                   
+                            </div>
+                            <div class="info list">
+                                <img src="/svg/list.svg" alt="List of Recipees">
+                                <p>11 Recipe</p>                        
+                            </div>
+                            <div class="info time">
+                                <img src="/svg/timer.svg" alt="Timer of Recipees">
+                                <p>1 hour</p>                      
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="bulalo-container">
-                    <img src="/images/Bulalo.webp" alt="Bulalo">
-                    <h2>Bulalo</h2>
-                    <div class="level">
-                        <img src="/svg/level.svg" alt="Level of Recipees">
-                        <p>Hard</p>                   
-                    </div>
-                    <div class="list">
-                        <img src="/svg/list.svg" alt="List of Recipees">
-                        <p>9 Recipe</p>                        
-                    </div>
-                    <div class="time">
-                        <img src="/svg/timer.svg" alt="Timer of Recipees">
-                        <p>2 hours</p>                      
-                    </div>
-                </div>
-                <div class="bicol-express-container">
-                    <img src="/images/Bicol-Express.jpg" alt="Bicol Express">
-                    <h2>Bicol Express</h2>
-                    <div class="level">
-                        <img src="/svg/level.svg" alt="Level of Recipees">
-                        <p>Meduim</p>                   
-                    </div>
-                    <div class="list">
-                        <img src="/svg/list.svg" alt="List of Recipees">
-                        <p>11 Recipe</p>                        
-                    </div>
-                    <div class="time">
-                        <img src="/svg/timer.svg" alt="Timer of Recipees">
-                        <p>1 hour</p>                      
-                    </div>
-                </div>
+                </div>                
             </div>
+
         </section>
 
         <!-- FAQ -->
@@ -192,5 +209,8 @@
    <!-- ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+   <!-- Header Search Dropdown -->
+    <script src="/js/script.js"></script>
 </body>
 </html>
