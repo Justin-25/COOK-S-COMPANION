@@ -90,9 +90,9 @@
     letter-spacing: var(--tracking-tight);
     color: var(--secondary-warm-terracotta);
     font-weight: var(--font-bold);
+    margin-left: 1rem;
 }
 
 .cuisine-hero-section img {
-    max-width: 500px;
-    width: 100%;
+    width: 40%;
 }
