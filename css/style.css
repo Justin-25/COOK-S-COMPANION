@@ -77,6 +77,10 @@ body {
   margin: 0 auto;
 }
 
+.show {
+  display: block;
+}
+
 .span {
   color: var(--primary-sage-green);
 }
@@ -234,10 +238,6 @@ body {
   border-top: 1px solid var(--neutral-soft-grey);
   box-shadow: 0px 5px 6px 2px rgba(0, 0, 0, 0.25);
   background-color: var(--neutral-cream);
-}
-
-.show {
-  display: block;
 }
 
 .dropdown-content li {
