@@ -282,18 +282,96 @@
 .menu-cuisine {
   grid-column: 2/3;
   grid-row: 1/2;
+  width: 100%;
 }
 
-.menu-cuisine .food-container {
+/* Update this once on responsive project. So it will have auto rows of the container */
+.menu-cuisine .cuisine-container {
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+
+.cuisine-container .food-container {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px -3px  var(--neutral-soft-grey);
+  padding: 0.8rem 0;
 }
 
 .food-container .food-border {
-
+  width: 90%;
+  display: block;
+  padding: 1rem;
+  margin: 0 auto;
+  border: 2px solid var(--neutral-soft-grey);
+  border-radius: 15px;
 }
 
 .food-border img {
-  max-width: 200px;
+  display: block;
+  max-width: 180px;
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 1px 3px 2px var(--neutral-soft-grey);
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.food-border h2 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-semibold);
+  font-size: var(--text-3xl);
+  letter-spacing: var(--tracking-tight);
+  color: var(--neutral-soft-grey);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.food-border .star {
+  font-size: var(--text-xl);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.star .yellow {
+  color: var(--star);
+}
+
+.food-border p {
+  font-family: var(--font-body);
+  font-weight: var(--font-medium);
+  font-size: var(--text-xl);
+  letter-spacing: var(--tracking-tight);
+  color: var(--neutral-soft-grey);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.save-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  letter-spacing: var(--tracking-tight);
+  color: var(--neutral-soft-grey);
+  border: none;
+  background-color: var(--neutral-cream);
+  border: 1px solid var(--secondary-warm-terracotta);
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px -1px var(--neutral-soft-grey);
+  transition: transform .2s ease-in-out;
+}
+
+.save-btn:hover {
+  transform: scale(1.1);
+  background-color: var(--secondary-warm-terracotta);
+  box-shadow: 1px 3px 3px -1px var(--neutral-soft-grey);
 }
