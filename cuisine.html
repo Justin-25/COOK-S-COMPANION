@@ -50,7 +50,13 @@
                         </div>
                     </div>
                     <div class="cuisine-search">
-                        <ion-icon name="search-outline"></ion-icon>
+                        <div class="search-btn">
+                            <ion-icon onclick="openSearch()" class="search-icon" name="search-outline"></ion-icon>
+                        </div>
+                        <div class="search-container" id="searchBar">
+                            <input class="input-search" type="text" placeholder="Search...">
+                            <ion-icon class="search-close" onclick="closeSearch()" name="close-outline"></ion-icon>
+                        </div>
                     </div>
                     <div id="sidebar" class="sidebar-menu">
                         <ion-icon class="close-icon" onclick="closeFunction()" name="close-outline"></ion-icon>
@@ -83,6 +89,9 @@
                     <!-- Menu -->
                     <div class="menu-cuisine">
                         <div class="cuisine-container">
+                            <div class="menu-title">
+                                <h2>Breakfast</h2>
+                            </div>
                             <div class="food-container">
                                 <div class="food-border">
                                     <img src="/images/Tapsilog.webp" alt="Tapsilog of Cook's Companion">
