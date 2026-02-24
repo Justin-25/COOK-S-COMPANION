@@ -431,7 +431,7 @@ body {
 /* CTA */
 .cta-container {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
   column-gap: 20px;
@@ -500,7 +500,7 @@ body {
 /* Footer */
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   padding: 1rem 2rem;
 }

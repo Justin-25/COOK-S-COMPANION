@@ -81,7 +81,7 @@
   min-height: 400px;
   display: flex;
   align-items: center;
-  margin-bottom: 10rem;
+  margin-bottom: 20rem;
   gap: 20px;
 }
 
@@ -318,6 +318,29 @@
   margin-left: 2rem;
 }
 
+.filter-btn {
+  display: block;
+  float: right;
+  padding: 0.5rem 1.2rem;
+  margin-top: 2rem;
+  margin-right: 1.5rem;
+  border: 1px solid var(--primary-sage-green);
+  font-size: var(--text-base);
+  font-family: var(--font-heading);
+  font-weight: var(--font-medium);
+  color: var(--neutral-soft-grey);
+  background-color: var(--primary-sage-green);
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px -1px var(--neutral-soft-grey);
+  cursor: pointer;
+  transition: transform .2s ease-in-out;
+}
+
+.filter-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 3px 5px -1px var(--neutral-soft-grey);
+}
+
 .time-slider {
   -webkit-appearance: none;
   width: 90%;
@@ -451,4 +474,64 @@
   transform: scale(1.1);
   background-color: var(--secondary-warm-terracotta);
   box-shadow: 1px 3px 3px -1px var(--neutral-soft-grey);
+}
+
+.pagination {
+  width: 100%;
+  display: block;
+  justify-items: center;
+  margin-top: 5rem;
+}
+
+.pagination nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.prev-pagination {
+  width: 40px;
+  height: 40px;
+  font-size: var(--text-3xl);
+  color: var(--neutral-soft-grey);
+  border: 2px solid var(--neutral-cream);
+  background-color: var(--neutral-cream);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.next-pagination {
+  width: 40px;
+  height: 40px;
+  font-size: var(--text-3xl);
+  color: var(--neutral-soft-grey);
+  border: 2px solid var(--neutral-cream);
+  background-color: var(--neutral-cream);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pagination-hover:hover {
+  color: var(--secondary-warm-terracotta);
+  border: 2px solid var(--secondary-warm-terracotta);
+  background-color: var(--neutral-cream);
+}
+
+.pagination-icon {
+  margin-top: 3px;
+}
+
+.pagination-page.active {
+  font-size: var(--text-3xl);
+  font-family: var(--font-heading);
+  font-weight: var(--font-semibold);
+  color: var(--neutral-soft-grey);
+  border: none;
+  background-color: var(--neutral-cream);
+  margin: 0 0.5rem;
+}
+
+#lunch, #dinner, #appetizer, #snack {
+  display: none;
+  overflow: hidden;
 }
